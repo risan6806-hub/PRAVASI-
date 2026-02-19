@@ -16,8 +16,10 @@ export const Footer = () => {
               <h3 className="text-xl font-bold font-['Noto_Sans_Malayalam'] text-[#C9A227]">PRAVASI SANTHWANAM 2020</h3>
               <p className="text-xs text-gray-400 mt-2">PRAVASI AVAAS CSC | ഫൈസൽ ബത്തേരി</p>
               <p className="text-xs text-gray-500 mt-1">
-                +974 6006 2530 | +91 85472 09513 |
-                <a href="mailto:pravasiaavas@gmail.com" className="hover:text-[#C9A227] ml-1">pravasiaavas@gmail.com</a>
+                +974 6006 2530 | +91 85472 09513 | +91 89210 94396
+              </p>
+              <p className="text-xs text-gray-500 mt-1">
+                <a href="mailto:pravasiaavas@gmail.com" className="hover:text-[#C9A227]">pravasiaavas@gmail.com</a>
               </p>
             </div>
           </div>

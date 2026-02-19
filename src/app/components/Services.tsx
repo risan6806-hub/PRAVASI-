@@ -2,7 +2,14 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { CreditCard, ShieldCheck, HeartHandshake, Banknote, FileCheck, Plane } from 'lucide-react';
 
-const ServiceCard = ({ icon: Icon, title, description, delay }) => (
+interface ServiceCardProps {
+  icon: React.ElementType;
+  title: string;
+  description: string;
+  delay: number;
+}
+
+const ServiceCard = ({ icon: Icon, title, description, delay }: ServiceCardProps) => (
   <motion.div
     initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
@@ -62,14 +69,14 @@ export const Services = () => {
     <section id="services" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <motion.span 
+          <motion.span
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             className="text-[#1E90FF] font-semibold tracking-wider text-sm font-['Noto_Sans_Malayalam'] uppercase"
           >
             ഞങ്ങളുടെ സേവനങ്ങൾ
           </motion.span>
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             className="text-3xl md:text-5xl font-bold text-[#0A3D62] mt-2 font-['Noto_Sans_Malayalam']"
