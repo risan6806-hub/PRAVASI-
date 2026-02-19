@@ -17,7 +17,7 @@ export const Documents = () => {
           <p className="text-gray-300 font-['Noto_Sans_Malayalam']">അപേക്ഷ സമർപ്പിക്കുന്നതിന് താഴെ പറയുന്ന രേഖകൾ കരുതുക</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
           {docs.map((doc, index) => (
             <motion.div
               key={index}
